@@ -1,0 +1,11 @@
+.preview {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  white-space: pre-wrap;
+
+  li {
+    margin-left: 40px;
+  }
+}

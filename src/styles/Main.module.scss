@@ -1,0 +1,13 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+
+  & > * {
+    height: 100%;
+    padding: 5px;
+    &:not(:nth-child(2)) {
+      padding: 10px 25px;
+    }
+  }
+  
+}

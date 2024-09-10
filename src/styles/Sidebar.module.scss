@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #666;
+
+  &.closed {
+    display: none;
+  }
+}
+
+.toggler {
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  border: none;
+  cursor: pointer;
+  // temp while no icon
+  color: #fff;
+  font-size: 24px;
+}
