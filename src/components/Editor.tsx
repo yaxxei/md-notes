@@ -15,14 +15,7 @@ export const Editor = observer(({ note, setText }: EditorProps) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const { noteStore } = useStore();
 
-  const {
-    cursorPosition,
-    setCursorPosition,
-    isList,
-    setList,
-    orderListNum,
-    setOrderListNum,
-  } = useEditorAreaContext();
+  const { cursorPosition, setCursorPosition } = useEditorAreaContext();
 
   function handleSelectedText() {
     const start = textareaRef.current?.selectionStart!;
